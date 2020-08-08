@@ -1,0 +1,75 @@
+@import "colors";
+
+@import "config";
+
+@import "header";
+
+@import "footer";
+
+@import "buttons";
+
+@import "utilities";
+
+@import "grid";
+
+// style the code here
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: $font-stack;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 10px 0px;
+}
+
+#color-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-box{
+    width: 100px;
+    height: 100px;
+    border-radius: $border-radius;
+    margin: 10px;
+    text-align: center;
+}
+
+.buttons-container{
+    a{
+        margin: 5px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.row{
+    margin: 10px 0px;
+    border-bottom: 1px solid $dark-color;
+    padding-bottom: 20px;
+}
+
+.margin-container{
+    p {
+        background-color: $light-color;
+        padding: 20px;
+        white-space: pre-line;
+    }
+}
+
+.padding-container{
+    p {
+        background-color: $light-color;
+        padding: 20px;
+        white-space: pre-line;
+    }
+}
+
+@import 'responsive';
